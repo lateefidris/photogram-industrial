@@ -1,0 +1,15 @@
+<%= render "shared/user_tabs" %>
+
+
+<div class="row mb-4">
+    <div class="col-md-6 offset-md-3">
+<ul class="list-group">
+<% current_user.followers.each do |follow| %>
+  <li class="list-group-item">
+    <%= link_to follow.username, user_path(follow.username), class: "nav-link list-group-item-action active" %>
+  </li>
+<% end %>
+  </li>
+</ul>
+</div>
+</div>
