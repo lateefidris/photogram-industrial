@@ -1,5 +1,5 @@
 <%= render "shared/user_tabs" %>
 
-<% current_user.own_photos.each do |photo| %>
+<% current_user.feed.each do |photo| %>
 <%= render "shared/photo", photo: photo %>
 <% end %>
